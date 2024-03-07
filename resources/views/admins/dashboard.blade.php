@@ -1,4 +1,4 @@
-@extends('back.layout.dashboard2-layouts')
+@extends('layout.dashboard2-layouts')
 @section('title', isset($pageTitle) ? $pageTitle : 'Dashboard')
 @section('content')
     
@@ -17,7 +17,7 @@
 						<div class="card-box height-100-p widget-style3">
 							<div class="d-flex flex-wrap">
 								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">{{ $dataSiswa }}</div>
+									{{-- <div class="weight-700 font-24 text-dark">{{ $dataSiswa }}</div> --}}
 									<div class="font-14 text-secondary weight-500">
 										Siswa
 									</div>
@@ -51,7 +51,7 @@
 						<div class="card-box height-100-p widget-style3">
 							<div class="d-flex flex-wrap">
 								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">{{ $totalPrestasi }}</div>
+									{{-- <div class="weight-700 font-24 text-dark">{{ $totalPrestasi }}</div> --}}
 									<div class="font-14 text-secondary weight-500">
 										Prestasi Siswa
 									</div>
@@ -71,7 +71,7 @@
 						<div class="card-box height-100-p widget-style3">
 							<div class="d-flex flex-wrap">
 								<div class="widget-data">
-									<div class="weight-700 font-24 text-dark">{{ $totalPelanggaran }}</div>
+									{{-- <div class="weight-700 font-24 text-dark">{{ $totalPelanggaran }}</div> --}}
 									<div class="font-14 text-secondary weight-500">Pelanggaran Siswa</div>
 								</div>
 								<div class="widget-icon">
@@ -127,9 +127,9 @@
 										</form>
 									</div>
 								</td> --}}
-							</tr>
+							{{-- </tr>
 							@endforeach
-						</tbody> --}}
+						</tbody> --}} 
 					</table>
 				</div>
 
